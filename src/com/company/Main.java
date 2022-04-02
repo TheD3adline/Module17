@@ -13,6 +13,8 @@ public class Main {
             System.out.println("Method sprint can't be executed: " + e.getMessage());
         } catch(ArithmeticException e) {
             System.out.println("Can't divide by 0 you donkey!");
+        } finally {
+            System.out.println("Good Bye!");
         }
 
         System.out.println("Bla");
