@@ -10,7 +10,7 @@ public class Main {
         try {
             person1.sprint();
         } catch(TooOldException e) {
-            System.out.println("Person is too old for this shit...");
+            System.out.println("Method sprint can't be executed: " + e.getMessage());
         } catch(ArithmeticException e) {
             System.out.println("Can't divide by 0 you donkey!");
         }
