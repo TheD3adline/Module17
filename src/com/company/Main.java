@@ -6,6 +6,12 @@ public class Main {
 
         Person person1 = new Person(90);
 
-        person1.sprint();
+        try {
+            person1.sprint();
+        } catch(Exception e) {
+            System.out.println("The person is too old to sprint...");
+        }
+
+        System.out.println("test");
     }
 }
