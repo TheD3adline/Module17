@@ -1,8 +1,5 @@
 package com.company;
 
-public class TooOldException extends Exception {
+public class TooOldException {
 
-    public TooOldException(String message) {
-        super(message);
-    }
 }
