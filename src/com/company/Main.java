@@ -8,8 +8,9 @@ public class Main {
 
         try {
             person1.sprint();
-        } catch(TooOldException e) {
-            System.out.println("Method sprint() can't be executed: " + e.getMessage()); //We can access the custom message in the try/catch of the call via the .getMessage() command
+            System.out.println("Good Bye!"); //If we want to execute another line after the original one in try it only works if the first line passes all exception tests that we have set up.
+        } catch(TooOldException e) { //We could also try another method of course.
+            System.out.println("Method sprint() can't be executed: " + e.getMessage());
         } catch(ArithmeticException e) {
             System.out.println("Can't divide by 0 you donkey!");
         }
