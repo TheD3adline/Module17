@@ -4,14 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person person1 = new Person(20);
+        Person person1 = new Person(70);
 
         try {
             person1.sprint();
         } catch(TooOldException e) {
-            System.out.println("The person is too old to sprint...");
-        } catch(ArithmeticException e) { //We can extend the try/catch block with another catch condition, in this case we catch the ArithmeticException (a RuntimeException) and handle it
-            System.out.println("Can't divide by 0 you donkey!"); //with this line. This will no longer lead to the program being terminated, and then execute the rest of the code instead.
+            System.out.println("Method sprint() can't be executed: " + e.getMessage()); //We can access the custom message in the try/catch of the call via the .getMessage() command
+        } catch(ArithmeticException e) {
+            System.out.println("Can't divide by 0 you donkey!");
         }
 
         System.out.println("test");
