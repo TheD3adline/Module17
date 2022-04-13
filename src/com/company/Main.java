@@ -8,11 +8,12 @@ public class Main {
 
         try {
             person1.sprint();
-            System.out.println("Good Bye!"); //If we want to execute another line after the original one in try it only works if the first line passes all exception tests that we have set up.
-        } catch(TooOldException e) { //We could also try another method of course.
+        } catch(TooOldException e) {
             System.out.println("Method sprint() can't be executed: " + e.getMessage());
         } catch(ArithmeticException e) {
             System.out.println("Can't divide by 0 you donkey!");
+        } finally { //The finally command allows us to execute code at the end of a try/catch block whether or not an exception was caught or not regardless
+            System.out.println("Good Bye!");
         }
 
         System.out.println("test");
